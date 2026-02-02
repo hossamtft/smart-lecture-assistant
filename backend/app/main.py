@@ -61,9 +61,12 @@ async def health_check():
     }
 
 
-# Import and include routers (will be added later)
-# from .api.routes import lectures, topics, query, dashboard
-# app.include_router(lectures.router, prefix="/api/lectures", tags=["lectures"])
+# Import and include routers
+from .api.routes import lectures
+app.include_router(lectures.router, prefix="/api/lectures", tags=["lectures"])
+
+# To be added:
+# from .api.routes import topics, query, dashboard
 # app.include_router(topics.router, prefix="/api/topics", tags=["topics"])
 # app.include_router(query.router, prefix="/api/query", tags=["query"])
 # app.include_router(dashboard.router, prefix="/api/dashboard", tags=["dashboard"])
