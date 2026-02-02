@@ -1,11 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Dashboard from './pages/Dashboard'
+import Upload from './pages/Upload'
+import Topics from './pages/Topics'
+import Query from './pages/Query'
 import './App.css'
-
-// Placeholder components (to be implemented)
-const Dashboard = () => <div><h1>Dashboard</h1><p>Topic maps and analytics will appear here</p></div>
-const Upload = () => <div><h1>Upload Lectures</h1><p>Drag and drop interface coming soon</p></div>
-const Topics = () => <div><h1>Topics</h1><p>Cross-lecture topics will be displayed here</p></div>
-const Query = () => <div><h1>Q&A</h1><p>Chat interface for RAG-based queries</p></div>
 
 function App() {
   return (
